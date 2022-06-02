@@ -35,12 +35,12 @@ class Visualizer():
         self.clock = pygame.time.Clock()      
 
     def __init_font(self):
-        self.font = pygame.font.Font('freesansbold.ttf', 20)
-        self.bubble = [self.font.render(bubble, False, green) , (30,410)]
-        self.selection = [self.font.render(selection, False, green) , (220,410)]
-        self.insertion = [self.font.render(insertion, False, green) , (430,410)]
-        self.merge = [self.font.render(merge, False, green) , (30,440)]
-        self.quick = [self.font.render(quick, False, green) , (220,440)]
+        font = pygame.font.Font('freesansbold.ttf', 20)
+        self.bubble = [font.render(bubble, False, green) , (30,410)]
+        self.selection = [font.render(selection, False, green) , (220,410)]
+        self.insertion = [font.render(insertion, False, green) , (430,410)]
+        self.merge = [font.render(merge, False, green) , (30,440)]
+        self.quick = [font.render(quick, False, green) , (220,440)]
 
     def __isGreater(self, i, j):
 
